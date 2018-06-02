@@ -1,6 +1,6 @@
 Rect[] snakeArr = new Rect[625]; //<>//
 Rect snakeFood = new Rect();
-Rect rect = new Rect();
+Rect scoreBackground = new Rect();
 Rect snakeHead;
 Text gameEndText = new Text();
 Text scoreText = new Text();
@@ -123,7 +123,7 @@ void drawScore()
 void isGameOver()
 {
 
-  if (snakeHead.x == -gridPos || snakeHead.x == width || snakeHead.y == rect.height - 20 || snakeHead.y == height) // if the snakeHead hits the wall
+  if (snakeHead.x == -gridPos || snakeHead.x == width || snakeHead.y == scoreBackground.height - 20 || snakeHead.y == height) // if the snakeHead hits the wall
   {
     stopGame = true;
   }
@@ -179,7 +179,7 @@ boolean foodOnSnake()
 
 void scoreBackground()
 {
-  drawRect(rect, 0, 0, 600, 80, color(0, 0, 255));
+  drawRect(scoreBackground, 0, 0, 600, 80, color(0, 0, 255));
 }
 
 void moveTo(int direction)
