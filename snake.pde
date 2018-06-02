@@ -38,7 +38,7 @@ void draw()
     drawGrid();
     isFoodAte(); 
     drawScore(); 
-    isGameOver(); 
+    isGameOver();
   }
 }
 
@@ -188,27 +188,6 @@ void moveTo(int direction)
   snakeHead.direction = direction;
   snakeHead.speed = 20;
 }
-
-void drawRect(Rect rectName, int x, int y, int width, int height, color myColor)
-{
-  rectName.x = x;
-  rectName.y = y;
-  rectName.width = width;
-  rectName.height = height;
-  rectName.brush = myColor;
-  rectName.draw();
-}
-
-void drawText(Text textName, String string, int x, int y, int textSize, color myColor)
-{
-  textName.text = string;
-  textName.x = x;
-  textName.y = y;
-  textName.textSize = textSize;
-  textName.brush = myColor;
-  textName.draw();
-}
-
 
 void updateSnakeMovement() 
 {
