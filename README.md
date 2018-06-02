@@ -1,2 +1,2 @@
-# snake
-simple snake game
+# snake game
+Snake implemention in Proccessing, within StarTech Project. 
